@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - to print a string
- * Description: Test 
+ * main - to print a string 
  * Return: Stops the program
  */
 int main(void)
