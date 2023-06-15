@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-char test[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-fprintf(stderr, test);
+char str[50] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+fprintf(stderr, str);
 return (1);
 }
