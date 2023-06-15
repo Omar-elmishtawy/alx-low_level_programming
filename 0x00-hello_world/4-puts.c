@@ -1,8 +1,7 @@
 #include<stdio.h>
 /**
- * main -  to print a string
- * Description: this was made for 
- * printing a string that was giving by alx task
+ * main - to print a string
+ * Description: Test 
  * Return: Stops the program
  */
 int main(void)
