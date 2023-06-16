@@ -4,9 +4,8 @@
 
 /**
  * main - print n if positive
- * Description: this check if the 
- * random value of n is positive
- * and print it.
+ * Description: this check if the
+ * random value of n is positive.
  * Return: Stops the program
  */
 int main(void)
