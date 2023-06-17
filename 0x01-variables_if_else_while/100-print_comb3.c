@@ -16,12 +16,12 @@ int main(void)
 
 	for (x = 48; x < 57; x++)
 	{
-		for (y = (x+1); y <= 57; y++)
+		for (y = (x + 1); y <= 57; y++)
 		{
 			putchar(x);
 			putchar(y);
 
-			if (x < 57)
+			if (x < 56)
 			{
 				putchar(44);
 				putchar(32);
