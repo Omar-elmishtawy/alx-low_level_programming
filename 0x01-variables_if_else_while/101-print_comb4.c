@@ -20,13 +20,15 @@ int main(void)
 		for (y = (x + 1); y < 57; y++)
 		{
 			for (z = (y + 1); z <= 57 ; z++)
-			putchar(x);
-			putchar(y);
-			putchar(z);
-			if (x < 55)
 			{
-				putchar(44);
-				putchar(32);
+				putchar(x);
+				putchar(y);
+				putchar(z);
+				if (x < 55)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
