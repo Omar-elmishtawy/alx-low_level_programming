@@ -12,6 +12,7 @@
 int main(void)
 {
 	int x;
+	int y;
 
 	for (x = 48; x < 57; x++)
 	{
