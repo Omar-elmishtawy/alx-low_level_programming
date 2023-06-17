@@ -29,10 +29,11 @@ int main(void)
 					putchar(32);
 					putchar(z);
 					putchar(m);
-				if (x <= 57)
-				{
-					putchar(44);
-					putchar(32);
+					if (x <= 57)
+					{
+						putchar(44);
+						putchar(32);
+					}
 				}
 			}
 		}
