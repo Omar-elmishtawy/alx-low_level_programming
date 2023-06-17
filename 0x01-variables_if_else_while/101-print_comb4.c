@@ -22,7 +22,7 @@ int main(void)
 			for (z = (y + 1); z <= 57 ; z++)
 			putchar(x);
 			putchar(y);
-			ptuchar(z);
+			putchar(z);
 			if (x < 55)
 			{
 				putchar(44);
