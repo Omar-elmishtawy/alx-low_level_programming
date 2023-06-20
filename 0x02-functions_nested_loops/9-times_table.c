@@ -25,7 +25,7 @@ void times_table(void)
 			else
 			{
 				l = f % 10;
-				f = f - l;
+				f = (f - l) / 10;
 				_putchar('0' + f);
 				_putchar('0' + l);
 			}
