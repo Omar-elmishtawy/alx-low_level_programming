@@ -7,6 +7,8 @@
  * Return: 1 when it is lower case and 0 when otherwise
  */
 int print_last_digit(int n)
-{
-	return (n % 10);
+{	
+	n = n % 10;
+	_putchar(n)
+	return (n);
 }
