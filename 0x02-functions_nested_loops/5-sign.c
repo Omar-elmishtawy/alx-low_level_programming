@@ -6,7 +6,7 @@
  * @n: chracter to check in lower case or no
  * Return: 1 when it is lower case and 0 when otherwise
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 	if (n > 0)
 	{
