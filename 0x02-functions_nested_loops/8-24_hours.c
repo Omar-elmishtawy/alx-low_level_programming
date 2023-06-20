@@ -27,7 +27,7 @@ void jack_bauer(void)
 					_putchar('0' + w);
 					_putchar('\n');
 					if (x == 2 && y == 3 && z == 5 && w == 9)
-						y == 10;
+						y = 10;
 						
 				}
 				
