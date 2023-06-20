@@ -11,7 +11,6 @@ void jack_bauer(void)
 	int y;
 	int z;
 	int w;
-	bool flag = false;
 
 	for (x = 0; x < 3; x++)
 	{
