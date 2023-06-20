@@ -10,6 +10,7 @@ void times_table(void)
 	int x;
 	int z;
 	int f;
+	int l;
 	int y = 0;
 
 	for (x = 0; x <= 9; x++)
@@ -17,10 +18,19 @@ void times_table(void)
 		for (z = 0; z <=9; z++)
 		{
 			f = z * y;
-			_putchar('0' + f);
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			if (f < 10)
+				_putchar('0' + f);
+			else
+				l = f % 10;
+				f = f - l;
+				_putchar('0' + f);
+				_putchar('0' + l);
+			if (z < 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 		y++;
