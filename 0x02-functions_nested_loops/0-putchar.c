@@ -8,7 +8,7 @@ Return: Stops the program
 int main(void)
 {
 	int i;
-	char arr[8] = ["_", "p", "u", "t", "c", "h", "a", "r"];
+	char arr[8] = { '_', 'p', 'u', 't', 'c', 'h', 'a', 'r' };
 
 	for (i = 0; i <= 7; i++)
 		_putchar(arr[i]);
