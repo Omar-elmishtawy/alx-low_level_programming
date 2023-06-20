@@ -5,7 +5,7 @@
  * Description: we prin using _putchar function
  * Return: Stops the program
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int i;
 
