@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - this function to print _putchar
+ * print_alphabet - this function to print _putchar
  * Description: we prin using _putchar function
- * Return: Stops the program
  */
 void print_alphabet(void)
 {
