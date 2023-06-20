@@ -21,6 +21,8 @@ void times_table(void)
 			f = z * y;
 			if (f < 10)
 			{
+				if (z < 9 && z > 0)
+					_putchar(' ')
 				_putchar('0' + f);
 			}
 			else
@@ -34,8 +36,6 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if (f < 10)
-					_putchar(' ');
 			}
 		}
 		_putchar('\n');
