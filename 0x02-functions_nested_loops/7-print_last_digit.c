@@ -7,7 +7,7 @@
  * Return: 1 when it is lower case and 0 when otherwise
  */
 int print_last_digit(int n)
-{	
+{
 	n = n % 10;
 	if (n > 0)
 	{
