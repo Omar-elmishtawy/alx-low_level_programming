@@ -11,6 +11,7 @@ void jack_bauer(void)
 	int y;
 	int z;
 	int w;
+	bool flag;
 
 	for (x = 0; x < 3; x++)
 	{
@@ -26,12 +27,18 @@ void jack_bauer(void)
 					_putchar('0' + z);
 					_putchar('0' + w);
 					_putchar('\n');
-					if (x == 2 && y == 3 && z == 5 && w == 9)
-						return (0);
-				
+					if (x == 2 && y == 3 && z == 5 && w == w)
+						flag = true;
+						break;
 				}
+				
+				if (flag)
+					break;
+			if (flag)
+				break;
 			
-			
+		if (flag)
+			break;	
 			}
 		
 		
