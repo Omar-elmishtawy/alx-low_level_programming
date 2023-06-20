@@ -21,10 +21,12 @@ void times_table(void)
 			if (f < 10)
 				_putchar('0' + f);
 			else
+			{
 				l = f % 10;
 				f = f - l;
 				_putchar('0' + f);
 				_putchar('0' + l);
+			}
 			if (z < 9)
 			{
 				_putchar(',');
