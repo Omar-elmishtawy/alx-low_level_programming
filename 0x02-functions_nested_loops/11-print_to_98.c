@@ -23,6 +23,7 @@ void print_to_98(int n)
 			n++;
 		}
 		putchar(' ');
+		putchar('\n');
 	}
 	else
 	{
@@ -37,5 +38,6 @@ void print_to_98(int n)
 			n--;
 		}
 		putchar(' ');
+		putchar('\n');
 	}
 }
