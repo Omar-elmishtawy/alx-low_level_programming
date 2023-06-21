@@ -7,7 +7,7 @@
  * @y: character two
  * Return: 1 when it is lower case and 0 when otherwise
  */
-int void print_to_98(int n)
+void print_to_98(int n)
 {
 	while (n < 98)
 	{
