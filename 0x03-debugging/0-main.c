@@ -3,14 +3,14 @@
 /**
  * main - this function to print _putchar
  * Description: we prin using _putchar function
- * Return: 1 when it is lower case and 0 when otherwise
+ * Return: 0 to stop the program
  */
 int main(void)
 {
-        int i;
+	int i;
 
-        i = 0;
-        positive_or_negative(i);
+	i = 0;
+	positive_or_negative(i);
 
-        return (0);
+	return (0);
 }
