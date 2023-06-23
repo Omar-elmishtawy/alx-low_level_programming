@@ -11,7 +11,6 @@ void print_diagonal(int size)
 {
 	int x;
 	int j;
-	int z;
 
 	for (x = 1; x <= size; x++)
 	{
@@ -19,7 +18,7 @@ void print_diagonal(int size)
 		{
 			_putchar(' ');
 		}
-		_putchar('\');
+		_putchar('\\');
 		_putchar('\n');
 	}
 	if (size <= 0)
