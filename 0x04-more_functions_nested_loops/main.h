@@ -12,4 +12,4 @@ int add(int, int);
 void print_to_98(int n);
 void print_triangle(int size);
 void print_square(int size);
-void print_line(int size);
+void print_line(int n);

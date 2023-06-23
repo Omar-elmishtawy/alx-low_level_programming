@@ -3,11 +3,11 @@
 /**
  * print_line - test function
  * Description: test
- * @size: size
+ * @n: size
  * Return: jfds
  */
 
-void print_line(int size)
+void print_line(int n)
 {
 	int x;
 	int j;
