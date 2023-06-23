@@ -3,7 +3,7 @@
 /**
  * main - test function
  * Description: test
- * Return: jfds
+ * Return: 0 to stop program
  */
 
 int main(void)
