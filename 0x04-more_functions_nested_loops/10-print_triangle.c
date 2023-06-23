@@ -4,8 +4,10 @@
  * print_triangle - test function
  * Description: test
  * @size: size
+ * Return: jfds
  */
-void print_triangle(int size)
+
+void main(int size)
 {
 	int x;
 	int j;
