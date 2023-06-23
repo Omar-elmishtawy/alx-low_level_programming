@@ -1,4 +1,5 @@
 #include "main.h"
+void print_triangle(int size);
 
 /**
  * print_triangle - test function
