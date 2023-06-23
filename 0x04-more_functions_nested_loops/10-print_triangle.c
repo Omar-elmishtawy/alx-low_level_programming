@@ -11,11 +11,6 @@ void print_triangle(int size)
 	int j;
 	int z;
 
-	if (n == 0)
-	{
-		_putchar('\n');
-	}
-
 	for (x = 1; x <= size; x++)
 	{
 		for (j = 1; j <= (size - x); j++)
@@ -25,5 +20,9 @@ void print_triangle(int size)
 		for (z = j; z <= size; z++)
 			_putchar('#');
 		_putchar('\n');
+	}
+	if (size == 0)
+	{
+		_putchar('\n')
 	}
 }
