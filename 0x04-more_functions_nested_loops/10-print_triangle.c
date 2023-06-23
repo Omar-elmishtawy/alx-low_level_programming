@@ -7,7 +7,7 @@
  * Return: jfds
  */
 
-void main(int size)
+void print_triangle(int size)
 {
 	int x;
 	int j;
