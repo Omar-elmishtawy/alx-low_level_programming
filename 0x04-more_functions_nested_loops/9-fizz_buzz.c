@@ -6,7 +6,7 @@
  * Return: jfds
  */
 
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -30,6 +30,8 @@ void main(void)
 		}
 		else
 			printf("%d", i);
+		printf(" ");
 	}
+	printf("\n")
 	return (0);
 }
