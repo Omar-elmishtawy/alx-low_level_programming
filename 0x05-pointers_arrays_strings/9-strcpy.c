@@ -12,7 +12,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	dest = src;
-	_putch(*(dest + 1))
+	_putch(*(dest + 1));
 	return (dest);
 }
 
