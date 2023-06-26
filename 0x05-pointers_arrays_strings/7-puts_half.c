@@ -12,7 +12,7 @@ void puts_half(char *str)
 	int count = 0;
 	int half;
 
-	while (*s)
+	while (*str)
 	{
 		count++;
 		s++;
