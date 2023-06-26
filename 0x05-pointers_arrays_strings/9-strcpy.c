@@ -11,7 +11,6 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int i;
 
 	_putchar(*src);
 	_putchar(src[5]);
