@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - test function
+ * _strcpy - test function
  * Description: test
  * @dest: size
  * @src: dasd
