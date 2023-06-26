@@ -14,13 +14,9 @@ char *_strcpy(char *dest, char *src)
 	int count = 0;
 	dest = src;
 	
-	while (*src)
-	{
-		_putchar(*src);
-		dest[count] = *src;
-		count++;
-		src++;
-	}
+	dest[0] = *src;
+	dest[1] = *(src + 1);
+	_putchar(dest[1]);
 
 	return (dest);
 }
