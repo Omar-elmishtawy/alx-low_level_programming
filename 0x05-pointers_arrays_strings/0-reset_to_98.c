@@ -2,13 +2,13 @@
 
 
 /**
- * print_line - test function
+ * reset_to_98 - test function
  * Description: test
  * @n: size
  * Return: jfds
  */
 
-void print_line(int n)
+void reset_to_98(int *n)
 {
-	*n =98;
+	*n = 98;
 }
