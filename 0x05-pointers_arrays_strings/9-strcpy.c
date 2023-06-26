@@ -16,7 +16,7 @@ char *_strcpy(char *dest, char *src)
 	
 	while (*src)
 	{
-		_putchar(*str);
+		_putchar(*src);
 		dest[count] = *src;
 		count++;
 		src++;
