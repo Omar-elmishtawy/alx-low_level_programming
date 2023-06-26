@@ -21,13 +21,14 @@ void rev_string(char *s)
 
 	_putchar(*s);
 	_putchar(count + '0');
-	while (count != 0)
+	count--;
+	while (count > 0)
 	{
 		temp = *s;
 		*s = *(s - count);
 		*(s - count) = temp;
 		s--;
-		count--;
+		count = count - 2;
 	}
 }
 
