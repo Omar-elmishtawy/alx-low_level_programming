@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strcpy - test function
@@ -15,6 +16,7 @@ char *_strcpy(char *dest, char *src)
 	
 	while (*src)
 	{
+		printf("%c", *src);
 		dest[count] = *src;
 		count++;
 		src++;
