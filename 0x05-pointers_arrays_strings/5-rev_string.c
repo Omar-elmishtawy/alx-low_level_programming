@@ -12,11 +12,15 @@ void rev_string(char *s)
 	int count = 0;
 	int temp;
 
+
+	_putchar(*s)
 	while (*s)
 	{
 		count++;
 		s++;
 	}
+	_putchar(count);
+	_putchar(*s);
 	while (count != 0)
 	{
 		temp = *s;
