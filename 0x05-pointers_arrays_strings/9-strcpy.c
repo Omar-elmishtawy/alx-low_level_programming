@@ -11,8 +11,10 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	dest = src;
-	_putchar(*(dest + 1));
+	int i;
+
+	_putchar(*src);
+	_putchar(src[5]);
 	return (dest);
 }
 
