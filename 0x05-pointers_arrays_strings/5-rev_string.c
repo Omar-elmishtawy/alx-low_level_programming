@@ -19,7 +19,7 @@ void rev_string(char *s)
 		count++;
 		s++;
 	}
-	_putchar(count);
+	_putchar('0' + count);
 	_putchar(*s);
 	while (count != 0)
 	{
