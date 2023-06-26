@@ -11,9 +11,12 @@
 
 char *_strcpy(char *dest, char *src)
 {
-
+	
+	while(*src != '\0')
+	{
 	_putchar(*src);
-	_putchar(src[5]);
+	src++;
+	}
 	return (dest);
 }
 
