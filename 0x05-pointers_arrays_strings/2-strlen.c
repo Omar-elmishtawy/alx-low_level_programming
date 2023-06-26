@@ -1,19 +1,17 @@
 #include "main.h"
 
-
 /**
  * _strlen - test function
  * Description: test
- * @a: size
- * @b: test
+ * @s: size
  * Return: jfds
  */
 
 int _strlen(char *s)
 {
 	int count = 0;
-	
-	while(*s)
+
+	while (*s)
 	{
 		count++;
 		s++;
