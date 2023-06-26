@@ -8,8 +8,9 @@
  */
 
 void puts2(char *str)
-{	
+{
 	int count = 0;
+
 	while (*str)
 	{
 		if (*(str - 1) == '\0' && count != 0)
