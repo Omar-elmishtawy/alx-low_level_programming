@@ -2,7 +2,7 @@
 
 
 /**
- * swap_int(int *a, int *b) - test function
+ * swap_int - test function
  * Description: test
  * @a: size
  * @b: test
