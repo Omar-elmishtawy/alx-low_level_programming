@@ -11,16 +11,15 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
 	int count_dest = 0;
 
-	while(*dest)
+	while (*dest)
 	{
 		count_dest++;
 		dest++;
-	
 	}
-	while (*src)
+	dest = dest - count_dest;
+	while (*src != '\0')
 	{
 		dest[count_dest] = *src;
 		src++;
@@ -29,4 +28,3 @@ char *_strcat(char *dest, char *src)
 	dest[count_dest] = '\0';
 	return (dest);
 }
-
