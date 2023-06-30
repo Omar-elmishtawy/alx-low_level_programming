@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * reverse_void - test function
+ * reverse_array - test function
  * Description: test
  * @a: size
  * @n: dasd
