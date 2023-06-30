@@ -11,7 +11,6 @@
 char *cap_string(char *a)
 {
 	int i = 0;
-	char *s = a;
 
 	while (a[i] != '\0')
 	{
@@ -35,5 +34,5 @@ char *cap_string(char *a)
 		i++;
 	}
 
-	return (s);
+	return (a);
 }
