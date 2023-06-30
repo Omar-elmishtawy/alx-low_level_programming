@@ -29,6 +29,8 @@ char *cap_string(char *a)
 				a[i] = a[i] - 32;
 			if (a[i - 1] == ')' || a[i - 1] == '{')
 				a[i] = a[i] - 32;
+			if (a[i - 1] == ';')
+				a[i] = a[i] - 32;
 		}
 		i++;
 	}
