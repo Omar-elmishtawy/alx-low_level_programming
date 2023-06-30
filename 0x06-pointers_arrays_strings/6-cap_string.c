@@ -20,7 +20,7 @@ char *cap_string(char *a)
 				a[i] = a[i] - 32;
 			if (a[i - 1] == '\n' || a[i - 1] == ',')
 				a[i] = a[i] - 32;
-			if (a[i - 1] == '}' || a[i - 1] == '.')
+			if (a[i - 1] == ';' || a[i - 1] == '.')
 				a[i] = a[i] - 32;
 			if (a[i - 1] == '!' || a[i - 1] == '?')
 				a[i] = a[i] - 32;
@@ -28,7 +28,7 @@ char *cap_string(char *a)
 				a[i] = a[i] - 32;
 			if (a[i - 1] == ')' || a[i - 1] == '{')
 				a[i] = a[i] - 32;
-			if (a[i - 1] == ';')
+			if (a[i - 1] == '}')
 				a[i] = a[i] - 32;
 		}
 		i++;
