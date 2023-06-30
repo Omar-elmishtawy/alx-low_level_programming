@@ -28,10 +28,10 @@ char *cap_string(char *a)
 			if (a[i - 1] == '\"' || a[i - 1] == '(')
 				a[i] = a[i] - 32;
 			if (a[i - 1] == ')' || a[i - 1] == '{')
-i				a[i] = a[i] - 32;
+				a[i] = a[i] - 32;
 		}
 		i++;
 	}
 
-	return (s);
+	return (is);
 }
