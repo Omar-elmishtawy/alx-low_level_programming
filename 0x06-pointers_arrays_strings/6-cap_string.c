@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * string_toupper - test function
+ * cap_string - test function
  * Description: test
  * @a: size
  * Return: jfds
@@ -31,8 +31,6 @@ char *cap_string(char *a)
 			if (a[i - 1] == '}')
 				a[i] = a[i] - 32;
 		}
-		if (a[i - 1] == '\t')
-			a[i - 1] = ' ';
 		i++;
 	}
 
