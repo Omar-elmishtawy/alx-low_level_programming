@@ -11,6 +11,7 @@
 char *cap_string(char *a)
 {
 	int i = 0;
+	char *s = a;
 
 	while (a[i] != '\0')
 	{
@@ -27,10 +28,10 @@ char *cap_string(char *a)
 			if (a[i - 1] == '\"' || a[i - 1] == '(')
 				a[i] = a[i] - 32;
 			if (a[i - 1] == ')' || a[i - 1] == '{')
-				a[i] = a[i] - 32;
+i				a[i] = a[i] - 32;
 		}
 		i++;
 	}
 
-	return (a);
+	return (s);
 }
