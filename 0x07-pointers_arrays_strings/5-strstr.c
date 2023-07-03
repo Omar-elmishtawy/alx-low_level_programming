@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strstr - test function
  * Description: test
- * haystack: size
+ * @haystack: size
  * @needle: b
  * Return: jfds
  */
