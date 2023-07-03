@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * _strpbrk - test function
+ * _print_chessboard - test function
  * Description: test
  * @a: size
- * Return: jfds
  */
 
 void print_chessboard(char (*a)[8])
