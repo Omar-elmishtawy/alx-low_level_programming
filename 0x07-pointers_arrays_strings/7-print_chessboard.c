@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _print_chessboard - test function
+ * print_chessboard - test function
  * Description: test
  * @a: size
  */
