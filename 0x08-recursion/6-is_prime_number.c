@@ -16,7 +16,7 @@ int check_prime(int n, int val)
 		return (0);
 	else if(val == n)
 		return (1);
-	return (check_primme(n, val + 1));
+	return (check_prime(n, val + 1));
 }
 
 /**
