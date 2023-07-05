@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - test function
+ * square - test function
  * Description: test
  * @n: size
  * @val: size2
