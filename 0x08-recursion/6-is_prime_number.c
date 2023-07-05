@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * square - test function
+ * check_prime - test function
  * Description: test
  * @n: size
  * @val: size2
