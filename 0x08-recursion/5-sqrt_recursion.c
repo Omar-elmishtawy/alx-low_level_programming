@@ -15,11 +15,18 @@ int square(int n, int val)
 	if (n == 0)
 		return (0);
 	if (val * val == n)
-		return val;
-	return square(n, val + 1);
-}	
+		return (val);
+	return (square(n, val + 1));
+}
+
+/**
+ * _sqrt_recursion - gaga function
+ * Description: dsad
+ * @n: das
+ * Return: assda
+ */
 
 int _sqrt_recursion(int n)
 {
-	return square(n, 1);
+	return (square(n, 1));
 }
