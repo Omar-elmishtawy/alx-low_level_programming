@@ -16,10 +16,8 @@ int square(int n, int val)
 		return (0);
 	if (val * val == n)
 		return val;
-	else
-		square(n, val + 1);
-}
-	
+	return square(n, val + 1);
+}	
 
 int _sqrt_recursion(int n)
 {
