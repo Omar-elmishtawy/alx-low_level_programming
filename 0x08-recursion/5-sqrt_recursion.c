@@ -3,8 +3,8 @@
 /**
  * _sqrt_recursion - test function
  * Description: test
- * @x: size
- * @y: size2
+ * @n: size
+ * @val: size2
  * Return: jfds
  */
 
