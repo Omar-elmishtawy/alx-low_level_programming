@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - test function
+ * _puts_recursion - test function
  * Description: test
  * @s: size
  * Return: jfds
