@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - test function
+ * int _strlen_recursion - test function
  * Description: test
  * @s: size
  * Return: jfds
  */
 
-void _print_rev_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (*s != '\0')
 	{
