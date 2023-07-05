@@ -4,8 +4,6 @@
  * _memset - test function
  * Description: test
  * @s: size
- * @b: b
- * @n: n
  * Return: jfds
  */
 
@@ -13,7 +11,7 @@ void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		return;
+		_putchar('\n');
 	}
 	else
 	{
