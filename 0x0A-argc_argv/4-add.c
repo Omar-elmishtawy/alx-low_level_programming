@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 
 /**
  *notdigit - test
@@ -12,9 +10,11 @@ int notdigit(char  *c)
 {
 	int j;
 
-	for (j = 0;j < strlen(c); j++)
+	for (j = 0; c[j] != '\0'; j++)
 	{
-		if (!isdigit(c[j]))
+		if (c[j] >= 48 && c[j] <= 57)
+			continue;
+		else
 			return (0);
 	}
 	return (1);
