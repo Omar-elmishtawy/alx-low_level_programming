@@ -1,17 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
  *notdigit - test
  *@c: c
  *Return: 0 or 1
  */
-int notdigit(char c)
+int notdigit(char  *c)
 {
-	if (c >= 48 && c <= 57)
-		return (0);
-	else
-		return (1);
+	int i;
+
+	for (i = 0; i < strlen(c); i++)
+	{
+		if (!isdigit(c[i]))
+			return (0);
+	}
+	return (1);
 }
 
 /**
@@ -34,7 +40,7 @@ int main(int argc, char *argv[])
 	{
 		while (i != argc)
 		{
-			if (notdigit(argv[i][0]))
+			if (!notdigit(argv[i]))
 			{
 				printf("Error\n");
 				return (1);
