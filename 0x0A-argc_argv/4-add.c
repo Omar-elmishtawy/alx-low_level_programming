@@ -10,11 +10,11 @@
  */
 int notdigit(char  *c)
 {
-	int i;
+	int j;
 
-	for (i = 0; i < strlen(c); i++)
+	for (j = 0;j < strlen(c); j++)
 	{
-		if (!isdigit(c[i]))
+		if (!isdigit(c[j]))
 			return (0);
 	}
 	return (1);
@@ -53,3 +53,14 @@ int main(int argc, char *argv[])
 	printf("%d\n", sum);
 	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
