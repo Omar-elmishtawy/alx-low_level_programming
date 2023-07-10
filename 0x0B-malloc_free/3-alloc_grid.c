@@ -3,7 +3,7 @@
 #include "stdio.h"
 
 /**
- * _strdup - test function
+ * alloc_grid - test function
  * Description: test
  * @str: string
  * Return: jfds
@@ -23,7 +23,9 @@ int **alloc_grid(int width, int height)
 	len = sizeof(int *) * height + sizeof(int) * width * height;
 	arr = (int **)malloc(len);
 	ptr = (int *)(arr + height);
-
+	
+	if (arr == NULL)
+		return NULL;
 	for (i = 0; i < height; i++)
 		arr[i] = (ptr + width * i);
 
@@ -32,4 +34,4 @@ int **alloc_grid(int width, int height)
 		for (j = 0; j < width; j++)
 			arr[i][j] = 0;
 	return (arr);
-}	
+}
