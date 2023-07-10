@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 		count2 = 0;
 		sum = count1++;
 	}
-	if (s1 != NULL && s2 != NULL<F2>)
+	if (s1 != NULL && s2 != NULL)
 	{
 		count2++;
 		sum = count1 + count2;
