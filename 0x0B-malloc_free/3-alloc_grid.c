@@ -17,7 +17,7 @@ char **alloc_grid(int width, int height)
 	int j = 0;
 	int *ptr;
 
-	if (width <= 0 || hieght <= 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
 	len = sizeof(int *) * height + sizeof(int) * width * height;
