@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	{
 		count++;
 		i++;
-	
+
 	}
 	count++;
 
