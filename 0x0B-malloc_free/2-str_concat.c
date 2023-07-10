@@ -39,6 +39,7 @@ char *str_concat(char *s1, char *s2)
 		arr[i] = s1[i];
 		i++;
 	}
+	printf("%d\n", count2);
 	while (count2--)
 	{
 		arr[i] = s2[j];
