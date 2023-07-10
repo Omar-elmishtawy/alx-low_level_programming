@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return ("");
 	while (s1[count1] != '\0')
 	{
@@ -30,7 +30,10 @@ char *str_concat(char *s1, char *s2)
 		count2++;
 	}
 	count2++;
-
+	if (s1 == NULL)
+		count1 = 0;
+	if (s2  == NULL)
+		count2 = 0;
 	arr = malloc((count1 + count2) * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
