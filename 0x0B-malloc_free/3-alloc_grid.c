@@ -5,7 +5,8 @@
 /**
  * alloc_grid - test function
  * Description: test
- * @str: string
+ * @width: string
+ * @height: kjda
  * Return: jfds
  */
 
@@ -23,9 +24,8 @@ int **alloc_grid(int width, int height)
 	len = sizeof(int *) * height + sizeof(int) * width * height;
 	arr = (int **)malloc(len);
 	ptr = (int *)(arr + height);
-	
 	if (arr == NULL)
-		return NULL;
+		return (NULL);
 	for (i = 0; i < height; i++)
 		arr[i] = (ptr + width * i);
 
