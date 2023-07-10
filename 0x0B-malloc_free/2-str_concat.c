@@ -41,7 +41,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	while (count2--)
 	{
-		arr[i] == s2[j];
+		arr[i] = s2[j];
+		j++;
 	}
 	return (arr);
 }
