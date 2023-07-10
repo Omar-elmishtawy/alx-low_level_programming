@@ -21,30 +21,20 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL && s2 == NULL)
 		return ("");
+	if (s1 == NULL)
+		return (s2);
+	if (s2 == NULL)
+		return (s1)
 	while (s1[count1] != '\0')
 	{
 		count1++;
-
 	}
 	while  (s2[count2]  != '\0')
 	{
 		count2++;
 	}
-	if (s1 == NULL)
-	{
-		count1 = 0;
-		sum =  count2++;
-	}
-	if (s2 == NULL)
-	{
-		count2 = 0;
-		sum = count1++;
-	}
-	if (s1 != NULL && s2 != NULL)
-	{
-		count2++;
-		sum = count1 + count2;
-	}
+	count2++;
+	sum = count1 + count2;
 	arr = malloc(sum * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
