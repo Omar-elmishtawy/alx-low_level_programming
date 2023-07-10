@@ -9,7 +9,7 @@
  * Return: jfds
  */
 
-char **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **arr;
 	int len = 0;
