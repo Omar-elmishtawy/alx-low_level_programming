@@ -3,7 +3,7 @@
 #include "stdio.h"
 
 /**
- * _memset - test function
+ * create_array - test function
  * Description: test
  * @c: char
  * @size: size
@@ -14,8 +14,11 @@ char *create_array(unsigned int size, char c)
 {
 	char *arr;
 	int i = 0;
+
+	if (size == 0)
+		return (0);
 	arr = malloc(size * sizeof(char));
-	while(size--)
+	while (size--)
 	{
 		arr[i] = c;
 		i++;
