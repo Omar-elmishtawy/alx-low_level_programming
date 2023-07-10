@@ -13,7 +13,12 @@
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
+	int i = 0;
 	arr = malloc(size * sizeof(char));
-	arr[0] = c;
+	while(size--)
+	{
+		arr[i] = c;
+		i++;
+	}
 	return (arr);
 }
