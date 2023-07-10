@@ -13,7 +13,8 @@ char *_strdup(char *str)
 {
 	char *arr;
 	int i = 0;
-	
+	int count = 0;
+
 	while (str[i] != '\0')
 	{
 		count++;
