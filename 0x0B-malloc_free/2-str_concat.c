@@ -38,16 +38,18 @@ char *str_concat(char *s1, char *s2)
 	if (arr == NULL)
 		return (NULL);
 
-	while (count1--)
+	while (count1 != 0)
 	{
 		arr[i] = s1[i];
 		i++;
+		count1--;
 	}
-	while (count2--)
+	while (count2 != 0)
 	{
 		arr[i] = s2[j];
 		j++;
 		i++;
+		count--;
 	}
 	return (arr);
 }
