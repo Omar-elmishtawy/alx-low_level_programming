@@ -23,41 +23,41 @@ char *str_concat(char *s1, char *s2)
 		return ("");
 	if (s1 == NULL)
 		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	while (s1[count1] != '\0')
+	while (s1[count1] != '\0' && s1 != NULL)
 	{
 		count1++;
 
 	}
-	while  (s2[count2]  != '\0' )
+	while  (s2[count2]  != '\0' && s2 != NULL)
 	{
 		count2++;
 	}
-	count2++;
 	if (s1 == NULL)
 	{
 		count1 = 0;
-		sum =  count2;
+		sum =  count2++;
 	}
 	else if (s2 == NULL)
 	{
 		count2 = 0;
-		sum = count1;
+		sum = count1++;
 	}
 	else
+	{
+		count2++;
 		sum = count1 + count2;
 
+	}
 	arr = malloc(sum * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
 
-	while (count1--)
+	while (count1 != 0)
 	{
 		arr[i] = s1[i];
 		i++;
 	}
-	while (count2--)
+	while (count2 != 0)
 	{
 		arr[i] = s2[j];
 		j++;
