@@ -49,7 +49,7 @@ char *str_concat(char *s1, char *s2)
 		arr[i] = s2[j];
 		j++;
 		i++;
-		count--;
+		count2--;
 	}
 	return (arr);
 }
