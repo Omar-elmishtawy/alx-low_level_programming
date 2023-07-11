@@ -3,9 +3,9 @@
 #include "stdio.h"
 
 /**
- * alloc_grid - test function
+ * free_grid - test function
  * Description: test
- * @width: string
+ * @grid: string
  * @height: kjda
  * Return: jfds
  */
