@@ -19,8 +19,6 @@ char *str_concat(char *s1, char *s2)
 	int j = 0;
 	int sum = 0;
 
-	printf("GREAAAT");
-
 	if (s1 == NULL && s2 == NULL)
 		return ("");
 	if (s1 == NULL)
@@ -37,7 +35,6 @@ char *str_concat(char *s1, char *s2)
 	}
 	sum = count1 + count2;
 	arr = malloc(sum * sizeof(char) + 1);
-	printf("HII I ALLOCATED\n");
 	if (arr == NULL)
 		return (NULL);
 	while (count1 != 0)
