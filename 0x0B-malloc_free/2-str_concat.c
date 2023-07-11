@@ -51,5 +51,6 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		count2--;
 	}
+	arr[i] = '\0';
 	return (arr);
 }
