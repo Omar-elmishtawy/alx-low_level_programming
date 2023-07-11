@@ -18,13 +18,14 @@ char *str_concat(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 	int sum = 0;
+	char *ptr = "\0"
 
 	if (s1 == NULL && s2 == NULL)
 		return ("");
 	if (s1 == NULL)
-		s1 = "\0";
+		s1 = ptr;
 	if (s2 == NULL)
-		s2 = "\0";
+		s2 = ptr;
 	while (s1[count1] != '\0')
 	{
 		count1++;
