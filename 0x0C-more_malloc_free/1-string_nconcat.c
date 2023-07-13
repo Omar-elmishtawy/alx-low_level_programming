@@ -20,12 +20,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
 
-	while (s[i] != '\0' && s1 != NULL)
+	while (s1[i] != '\0' && s1 != NULL)
 	{
 		i++;
 
 	}
-	while (s[j] != '\0' && s2 != NULL)
+	while (s2[j] != '\0' && s2 != NULL)
 		j++;
 
 	if (n > j)
@@ -47,6 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 		j++;
 	}
-	arr[i] = '\0'
+	arr[i] = '\0';
 	return (arr);
 }
