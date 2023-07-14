@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * string_nconcat - main
- * @s1: argc
- * @s2 : string
- * @n: n
- *
+ * _calloc - main
+ * @size: argc
+ * @nmemb: string
  * Return: absolute value of @n
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
