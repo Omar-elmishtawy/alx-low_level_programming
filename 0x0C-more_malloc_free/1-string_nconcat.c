@@ -1,40 +1,42 @@
 #include "main.h"
 
 /**
- * string_nconcat - test function
- * Description: test
- * @s1: string
- * @s2: s
+ * string_nconcat - main
+ * @s1: argc
+ * @s2 : string
  * @n: n
- * Return: jfds
+ *
+ * Return: absolute value of @n
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *arr;
+	char *ar;
 	unsigned int i;
-	unsigned int count1 = 0;
-	unsigned int count2 = 0;
+	unsigned int s1_len = 0;
+	unsigned int s2_len = 0;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 	for (i = 0; s1[i] != '\0'; i++)
-		count1++;
+		s1_len++;
 	for (i = 0; s2[i] != '\0'; i++)
-		count2++;
-	if (n > count2)
-		n = count2;
-
-	arr = malloc((count1 + n + 1) * sizeof(*arr));
-	if (arr == NULL)
+		s2_len++;
+	if (n >= s2_len)
+		ar = malloc(sizeof(char) * (s1_len + s2_len + 1));
+	else
+	{
+		s2_len = n;
+		ar = malloc(sizeof(char) * (s1_len + n + 1));
+	}
+	if (ar == NULL)
 		return (NULL);
+	for (i = 0; i < s1_len; i++)
+		ar[i] = s1[i];
+	for (i = 0; i < s2_len; i++)
+		ar[s1_len + i] = s2[i];
+	ar[s1_len + s2_len] = '\0';
 
-	for (i = 0; i < count1; i++)
-		arr[i] = s1[i];
-	for (i = 0; s2[i] < n; i++)
-		arr[i + count1] = s2[i];
-
-	arr[count1 + n] = '\0';
-	return (arr);
+	return (ar);
 }
