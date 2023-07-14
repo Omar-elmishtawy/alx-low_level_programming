@@ -1,16 +1,19 @@
 #include "main.h"
-/**
- * malloc_checkdd - test function
- * Description: test
- * @b: string
- * Return: jfds
- */
 
+/**
+ * malloc_checked - main
+ * @b: sdasd
+ *
+ * Return: absolute value of @n
+ */
 void *malloc_checked(unsigned int b)
 {
-	int *arr = malloc(b);
+	void *ar;
 
-	if (arr == NULL)
-		return (98);
-	return (arr);
+	ar = malloc(b);
+	if (ar == NULL)
+	{
+		exit(98);
+	}
+	return (ar);
 }
