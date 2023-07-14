@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
-#include <limits.h>
 /**
  * malloc_checkdd - test function
  * Description: test
