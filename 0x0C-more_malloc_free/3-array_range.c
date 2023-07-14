@@ -1,25 +1,29 @@
 #include "main.h"
-
+#include <stdlib.h>
 
 /**
- * array_range - main
- * @min: argc
- * @max : string
+ * array_range - f
+ * @min: min
+ * @max: max
  *
- * Return: absolute value of @n
+ * Return:arr
  */
 int *array_range(int min, int max)
 {
-	int *ar;
-	int i;
+	int *array, index, size;
 
 	if (min > max)
 		return (NULL);
 
-	ar = malloc(sizeof(int) * (max - min + 1));
-	if (ar == NULL)
+	size = max - min + 1;
+
+	array = malloc(sizeof(int) * size);
+
+	if (array == NULL)
 		return (NULL);
-	for (i = 0; i < (max - min + 1); i++)
-		ar[i] = min++;
-	return (ar);
+
+	for (index = 0; index < size; index++)
+		array[index] = min++;
+
+	return (array);
 }
