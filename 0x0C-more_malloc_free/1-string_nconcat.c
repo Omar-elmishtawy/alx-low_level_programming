@@ -18,16 +18,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int count1 = 0;
 	int count2 = 0;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	while (s1[i] != '\0' && s1 != NULL)
+	while (s1[i] != '\0')
 	{
 		i++;
 		count1++;
 
 	}
-	while (s2[j] != '\0' && s2 != NULL)
+	while (s2[j] != '\0')
 	{
 		j++;
 		count2++;
