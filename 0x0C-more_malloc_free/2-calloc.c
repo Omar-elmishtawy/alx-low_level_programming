@@ -8,32 +8,16 @@
  *
  * Return: absolute value of @n
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *ar;
-	unsigned int i;
-	unsigned int s1_len = 0;
-	unsigned int s2_len = 0;
+	int i;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	for (i = 0; s1[i] != '\0'; i++)
-		s1_len++;
-	for (i = 0; s2[i] != '\0'; i++)
-		s2_len++;
-	if (n >= s2_len)
-		n = s2_len;
-
-	ar = malloc(sizeof(char) * (s1_len + n + 1));
-	if (ar == NULL)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-	for (i = 0; i < s1_len; i++)
-		ar[i] = s1[i];
-	for (i = 0; i < s2_len; i++)
-		ar[s1_len + i] = s2[i];
-	ar[s1_len + s2_len] = '\0';
+	ar = malloc(nmemb *  size);
+	for (i = 0; i < (nmemb * size); i++)
+		ar[i] = '\0';
 
 	return (ar);
 }
