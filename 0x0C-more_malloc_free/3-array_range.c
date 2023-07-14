@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * array_range - main
  * @min: argc
@@ -9,7 +10,7 @@
  */
 int *array_range(int min, int max)
 {
-	char *ar;
+	int *ar;
 	unsigned int i;
 
 	if (min > max)
