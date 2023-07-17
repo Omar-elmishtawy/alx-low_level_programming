@@ -1,4 +1,5 @@
 #include "dog.h"
+
 /**
  * init_dog - dogyy
  * @d: ointer to the structure variable
