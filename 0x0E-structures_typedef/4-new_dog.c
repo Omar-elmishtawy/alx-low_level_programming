@@ -3,22 +3,28 @@
 #include <stdlib.h>
 
 /**
- * init_dog - dogyy
- * @d: ointer to the structure variable
- * @name: name of the dog
- * @age: age:
- * @owner: owner
+ * count_str - dogyy
+ * @str: ointer to the structure variable
  * Return: nothing
  */
 
 int count_str(char *str)
 {
 	int i = 0;
+
 	while (str[i] != '\0')
 		i++;
 	return (i);
 
 }
+
+/**
+ * new_dog - salf
+ * @name: sadd
+ * @age: adssd
+ * @owner: sad
+ * Return: dasdasd
+ */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -38,7 +44,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d->name = malloc(sizeof(char) * name_size + 1);
 	if (d->name == NULL)
 	{
-		free (d);
+		free(d);
 		return (NULL);
 	}
 
@@ -50,24 +56,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(d);
 		return (NULL);
 	}
-	
+
 	d->name = name;
 	d->owner = owner;
 	d->age = age;
 	return (d);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
