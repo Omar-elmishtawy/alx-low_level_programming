@@ -3,7 +3,7 @@
 /**
  * op_add - add
  * @a: a
- * @b: b 
+ * @b: b
  * Return: sum
  */
 
