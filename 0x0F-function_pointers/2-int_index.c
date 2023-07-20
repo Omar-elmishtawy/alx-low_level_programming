@@ -5,7 +5,7 @@
  * @array: name
  * @size: pointer to function
  * @cmp: action
- * Return: return the index of the first match
+ * Return: return
  */
 
 
@@ -22,10 +22,6 @@ int int_index(int *array, int size, int (*cmp)(int))
 			if (cmp(array[i]))
 				return (i);
 		}
-	}
-	else
-	{
-		exit(1);
 	}
 
 	return (-1);
