@@ -2,6 +2,7 @@
 #define FUNCTION_POINTERS_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 int int_index(int *array, int size, int (*cmp)(int));
 int _putchar(char x);
