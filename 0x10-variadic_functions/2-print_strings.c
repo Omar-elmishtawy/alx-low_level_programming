@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - returns the sum of all its parameters.
+ * print_strings - returns the sum of all its parameters.
  * @n: amount of the arguments.
  * @separator: ldsm
  *
