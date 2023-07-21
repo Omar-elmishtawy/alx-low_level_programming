@@ -3,7 +3,7 @@
 /**
  * print_numbers - returns the sum of all its parameters.
  * @n: amount of the arguments.
- * @p: ldsm
+ * @separator: ldsm
  *
  * Return: sum of its parameters.
  */
