@@ -7,7 +7,7 @@
  *
  * Return: sum of its parameters.
  */
-void print_numbers(const char *separator, const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ptr;
 	unsigned int i;
@@ -17,7 +17,7 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 		separator = " ";
 	va_start(ptr, n);
 	for (i = 0; i < n; i++)
-		printf("%d%c ", va_arg(ptr, int), separator);
+		printf("%d%s ", va_arg(ptr, int), separator);
 
 	va_end(ptr);
 }
