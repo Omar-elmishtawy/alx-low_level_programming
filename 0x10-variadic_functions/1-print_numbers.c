@@ -7,20 +7,21 @@
  *
  * Return: sum of its parameters.
  */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list ptr;
+	va_list valist;
 	unsigned int i;
-	int sum = 0;
 
-	if (!separator)
-		separator = " ";
-	va_start(ptr, n);
+	va_start(valist, n);
+
 	for (i = 0; i < n; i++)
-		if (i == (n - 1))
-			printf("%d\n", va_arg(ptr, int));
-		else
-			printf("%d%s ", va_arg(ptr, int), separator);
+	{
+		printf("%d", va_arg(valist, int));
+		if (separator && i < n - 1)
+			printf("%s", separator);
+	}
 
-	va_end(ptr);
+	printf("\n");
+	va_end(valist);
 }
