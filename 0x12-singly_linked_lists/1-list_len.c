@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_list - function
+ * list_len - function
  * @h: pointer to struct list
  * Return: size_t
  */
