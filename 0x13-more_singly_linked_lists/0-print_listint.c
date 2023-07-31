@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - function
+ * print_listint - function
  * @h: pointer to struct list
  * Return: size_t
  */
