@@ -1,26 +1,23 @@
 #include "lists.h"
 
 /**
- * print_list - function
- * @h: pointer to struct list
+ * add_nodeint - function
+ * @head: pointer to struct list
+ * @n: n
  * Return: size_t
  */
 
-size_t print_list(const list_t *h)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	size_t nodes_num = 0;
+	listint_t *new_node;
 
-	if (!h)
+	new_node = malloc(sizeof(listint_t);)
+	if (!head || !new_node)
 		return (0);
 
-	while (h)
-	{
-		if (h->str)
-			printf("[%d] %s\n", h->len, h->str);
-		else
-			printf("[0] (nil)\n");
-		h = h->next;
-		nodes_num++;
-	}
-	return (nodes_num);
+	new_node->n = n;
+	new_node->next = *head;
+	*head = new_node;
+
+	return (new_node);
 }
