@@ -3,7 +3,7 @@
 /**
  * get_nodeint_at_index - function
  * @head: pointer to struct list
- * index: int
+ * @index: int
  * Return: listint
  */
 
