@@ -1,9 +1,26 @@
 #include "main.h"
+/**
+ * power - fa
+ * @x: sad
+ * @y: dsad
+ * Return: dsada
+ */
+unsigned int power(unsigned int x, unsigned int y)
+{
+	unsigned int power = x;
+	while (y > 1)
+	{
+		power = power * x;
+		y--;
+	}
+	return (power);
+}
+
 
 /**
  * binary_to_uint - as
- *
- *
+ * @b: das
+ *Return: dsad
  */
 
 unsigned int binary_to_uint(const char *b)
@@ -12,18 +29,20 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result = 0;
 	unsigned int x;
 	unsigned int count = 0;
+
+	if (!b)
+		return (0);
 	while (b[i] != '\0')
 		i++;
 	i = i - 1;
-	while (i >= 0)
+	result = b[i] - '0';
+	while (i > 0)
 	{
 		if (isdigit(b[count]))
 			x = b[count] - '0';
 		else
 			return (0);
-		result = result + (x * pow(2, i));
-		if (i == 0)
-			break;
+		result = result + (x * power(2, i));
 		i--;
 		count++;
 		
