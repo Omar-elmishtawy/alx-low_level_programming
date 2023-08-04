@@ -35,6 +35,8 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	while (b[i] != '\0')
 		i++;
+	if (i == 0)
+		return (0);
 	i = i - 1;
 	if (b[i] == 48 || b[i] == 49)
 		result = b[i] - '0';
