@@ -1,14 +1,17 @@
 #include "main.h"
 /**
- * print_binary - as
+ * get_bit - as
  * @n: das
+ * @index:dsad
  * Return: dsad
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int count = 0;
-	int arr[100];
+	int *ptr;
 	unsigned int x = index;
+
+	ptr = malloc(sizeof(unsigned long int));
 
 	if (n == 0 && index == 0)
 		return (0);
@@ -17,17 +20,17 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		if (n & 1)
 		{
-			arr[count] = 1;
+			ptr[count] = 1;
 		}
 		else
-			arr[count] = 0;
+			ptr[count] = 0;
 		if (index != 0)
 			n = n >> 1;
 		count++;
 	}
 	if (n)
 	{
-		return (arr[x]);
+		return (ptr[x]);
 	}
 	return (-1);
 }
