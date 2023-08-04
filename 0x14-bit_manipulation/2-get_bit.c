@@ -10,6 +10,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	int arr[100];
 	unsigned int x = index;
 
+	if (n == 0 && index == 0)
+		return (0);
 	index++;
 	while (index--)
 	{
