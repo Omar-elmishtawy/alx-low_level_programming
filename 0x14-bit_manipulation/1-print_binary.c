@@ -5,7 +5,6 @@
  */
 void print_binary(unsigned long int n)
 {
-	printf("%ld", n);
 	if (n == 0)
 	{
 		printf("0");
