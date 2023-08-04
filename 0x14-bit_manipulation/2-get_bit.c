@@ -12,7 +12,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int x = index;
 
 	ptr = malloc(sizeof(unsigned long int));
-
+	if (!ptr)
+		return (-1);
 	if (n == 0 && index == 0)
 		return (0);
 	index++;
