@@ -36,7 +36,10 @@ unsigned int binary_to_uint(const char *b)
 	while (b[i] != '\0')
 		i++;
 	i = i - 1;
-	result = b[i] - '0';
+	if (b[i] == 48 || b[i] == 49)
+		result = b[i] - '0';
+	else
+		return (0);
 	while (i > 0)
 	{
 		if (isdigit(b[count]) && (b[count] == 48 || b[count] == 49))
