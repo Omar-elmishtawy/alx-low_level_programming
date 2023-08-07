@@ -27,9 +27,9 @@ int main(int argc, char **argv)
 
 void cp_from_to(const char *file_from, const char *file_to)
 {
-	char buf[8 * 1024];
+	char buf[1024];
 	int df_from, df_to;
-	size_t bytes;
+	ssize_t bytes;
 	int stat;
 
 	df_from = open(file_from, O_RDONLY);
@@ -45,9 +45,13 @@ void cp_from_to(const char *file_from, const char *file_to)
 		exit(99);
 	}
 	do {
-		bytes = read(df_from, &buf[0], 1024);
-		write(df_to, &buf[0], bytes);
+		bytes = read(df_from, buf, 1024);
+		if (write(df_to, buf, bytes) != bytes)
+			dprintf(2, "Error: Can't write to %s\n", file_to), exit(99);
 	} while (bytes);
+
+	if (bytes == -1)
+		dprintf(2, "Error: Can't read from %s\n", file_from), exit(98);
 
 	stat = close(df_from);
 	if (stat == -1)
