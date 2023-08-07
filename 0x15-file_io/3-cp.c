@@ -47,15 +47,7 @@ void cp_from_to(const char *file_from, const char *file_to)
 		bytes = read(df_from, &buf[0], 1024);
 		write(df_to, &buf[0], bytes);
 	} while (bytes);
-	
-	if (close(df_from) == -1)
-	{
-		dprintf(2, "Error: Can't close fd %d\n", df_from);
-		exit(100);
-	}
-	if (close(df_to) == -1)
-	{
-		dprintf(2, "Error: Can't close fd %d\n", df_to);
-		exit(100);
-	}
+
+	close(df_from);
+	close(df_to);	
 }
