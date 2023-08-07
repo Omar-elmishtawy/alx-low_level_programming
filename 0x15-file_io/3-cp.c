@@ -1,18 +1,29 @@
 #include "main.h"
 
 
-
+/**
+ * main - ,ca
+ * @argc: sac
+ * @argv: sac
+ * Return: 0
+ */
 
 int main(int argc, char **argv)
 {
-	if(argc != 3)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: %s cpfile_from file_to\n", argv[0]);
-		exit(97);	
-	}	
+		exit(97);
+	}
 	cp_from_to(argv[1], argv[2]);
-	return(0);
+	return (0);
 }
+
+/**
+ * cp_from_to - dks
+ * @file_from: ksalc
+ * @file_to: lsda
+ */
 
 void cp_from_to(const char *file_from, const char *file_to)
 {
@@ -33,12 +44,9 @@ void cp_from_to(const char *file_from, const char *file_to)
 		dprintf(2, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
-	
-	do
-	{
+	do {
 		bytes = read(df_from, &buf[0], 1024);
 		write(df_to, &buf[0], bytes);
-	}
-	while(bytes);
+	} while (bytes);
 
 }
