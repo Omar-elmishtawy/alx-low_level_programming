@@ -9,29 +9,19 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fd;
-	char ch;
-	ssize_t count = 0;
-	ssize_t state;
+	int fd;
+	char ch[1024 * 8];
+	ssize_t bytes;
 
-	if (!filename)
+	if (!filename || !letters)
 		return (0);
 
-	fd = fopen(filename, "r");
-	if (!fd)
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 		return (0);
 
-	while (letters--) 
-	{
-		ch = fgetc(fd);
-		if (ch == EOF)
-			break;
-		state = write(1, &ch, sizeof(char));
-
-		if (state == sizeof(char))
-			count++;
-		else
-			return (0);
-	}
-	return (count);
+	bytes = read(fd, &ch[0], letters);
+	bytes = write(STDOUT_FILENO, &ch[0], bytes);
+	close(fd);
+	return (bytes);
 }
