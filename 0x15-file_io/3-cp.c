@@ -49,5 +49,5 @@ void cp_from_to(const char *file_from, const char *file_to)
 	} while (bytes);
 
 	close(df_from);
-	close(df_to);	
+	close(df_to);
 }
