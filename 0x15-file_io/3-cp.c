@@ -33,8 +33,12 @@ void cp_from_to(const char *file_from, const char *file_to)
 		dprintf(2, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
-
-	bytes = read(df_from, &buf[0], 1024);
-	write(df_to, &buf[0], bytes);
+	
+	do
+	{
+		bytes = read(df_from, &buf[0], 1024);
+		write(df_to, &buf[0], bytes);
+	}
+	while(bytes);
 
 }
