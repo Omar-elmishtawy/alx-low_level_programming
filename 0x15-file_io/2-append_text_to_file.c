@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * appen_text_to_file - create file
+ * append_text_to_file - create file
  * @filename: filename
  * @text_content: sasa
  * Return: number of printed letter
