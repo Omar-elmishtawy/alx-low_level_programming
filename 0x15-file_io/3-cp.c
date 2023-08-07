@@ -57,7 +57,7 @@ void cp_from_to(const char *file_from, const char *file_to)
 	}
 	stat = close(df_to);
 	if (stat == -1)
-	{	
+	{
 		dprintf(2, "Error: Can't close fd %d\n", df_to);
 		exit(100);
 	}
