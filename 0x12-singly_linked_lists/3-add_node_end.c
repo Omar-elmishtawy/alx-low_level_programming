@@ -7,7 +7,7 @@
  * Return: size_t
  */
 
-list_t *add_node_end(listint_t **head, const int n)
+list_t *add_node_end(list_t **head, const int n)
 {
 	list_t *new_node;
 	list_t *itr_node;
