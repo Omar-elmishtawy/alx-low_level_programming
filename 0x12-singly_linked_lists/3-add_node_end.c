@@ -3,7 +3,7 @@
 /**
  * add_node_end - function
  * @head: pointer to struct list
- * @n: n
+ * @str: str
  * Return: size_t
  */
 
@@ -16,7 +16,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node = malloc(sizeof(list_t));
 	if (!head || !new_node)
 		return (NULL);
-	new_node->str = *str;
+	new_node->str = strdup(str);
 
 	if (itr_node)
 	{
