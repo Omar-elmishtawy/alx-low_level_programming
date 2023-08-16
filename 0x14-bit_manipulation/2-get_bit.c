@@ -8,10 +8,11 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int count = 0;
-	int *ptr;
+	unsigned long int *ptr;
 	unsigned int x = index;
 
-	ptr = malloc(sizeof(unsigned long int));
+	printf("dsad");
+	ptr =  (unsigned long int*)malloc(sizeof(unsigned long int));
 	if (!ptr)
 		return (-1);
 	if (n == 0 && index == 0)
@@ -29,6 +30,8 @@ int get_bit(unsigned long int n, unsigned int index)
 			n = n >> 1;
 		count++;
 	}
+	if (index > count)
+		return (-1);
 	if (n)
 	{
 		return (ptr[x]);
