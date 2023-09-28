@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * print_binary - as
+ * set_bit - as
  * @n: das
- * @ index: kdas
+ * @index: kdas
+ *
+ * return: sa
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
