@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * set_bit - as
+ * clear_bit - as
  * @n: das
  * @index: kdas
  *
