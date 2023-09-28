@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+void _putchar(char c)
 unsigned int binary_to_uint(const char *b);
 unsigned int power(unsigned int x, unsigned int y);
 #endif
