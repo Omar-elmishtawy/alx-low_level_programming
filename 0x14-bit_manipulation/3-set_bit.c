@@ -4,7 +4,7 @@
  * @n: das
  * @index: kdas
  *
- * return: sa
+ * Return: 1
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
