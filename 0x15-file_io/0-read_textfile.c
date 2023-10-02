@@ -24,4 +24,4 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bytes = write(STDOUT_FILENO, &ch[0], bytes);
 	close(fd);
 	return (bytes);
-
+}
