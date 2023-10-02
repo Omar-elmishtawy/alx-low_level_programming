@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * main - ,ca
+ * @argc: sac
+ * @argv: sac
+ * Return: 0
+ */
+
+int main(int argc, char **argv)
+{
+	if (argc != 3)
+	{
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
+	}
+	cp_from_to(argv[1], argv[2]);
+	return (0);
+}
+
+
+/**
  * cp_from_to - dks
  * @file_from: ksalc
  * @file_to: lsda
