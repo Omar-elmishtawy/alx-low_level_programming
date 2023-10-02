@@ -47,7 +47,7 @@ void cp_from_to(const char *file_from, const char *file_to)
 	do {
 		bytes = read(df_from, buf, 1024);
 		if (bytes == -1)
-			dprintf(STDERR_FILENO, "Error: Can't read from %s\n", file_from), exit(98);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from), exit(98);
 		if (write(df_to, buf, bytes) != bytes)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to), exit(99);
 	} while (bytes);
