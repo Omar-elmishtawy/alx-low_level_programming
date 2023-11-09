@@ -2,7 +2,8 @@
 
 /**
  * print_dlistint - print list
- * @h: pointer to head
+ * @head: pointer to head
+ * @n: number to add
  * Return: number of nodes
  */
 
