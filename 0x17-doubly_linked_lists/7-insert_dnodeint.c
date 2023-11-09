@@ -19,11 +19,12 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (new);
 	}
 
-	while (temp->next)
+	while (temp)
 	{
 		count++;
 		temp = temp->next;
 	}
+	printf("%d", count);
 	if (idx > count)
 	{
 		return (NULL);
