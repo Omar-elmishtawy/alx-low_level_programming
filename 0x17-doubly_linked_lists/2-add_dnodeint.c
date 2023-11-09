@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint - print list
+ * add_dnodeint - print list
  * @head: pointer to head
  * @n: number to add
  * Return: number of nodes
