@@ -1,8 +1,14 @@
 #include "hash_tables.h"
 
+/**
+ * hash_table_print - print
+ * @hash_table_t: pointer
+ */
+
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
+	int n = 0;
 	hash_node_t *tmp;
 
 	if (!ht)
@@ -14,9 +20,10 @@ void hash_table_print(const hash_table_t *ht)
 		tmp = ht->array[i];
 		while (tmp)
 		{
-			if (i != 0)
+			if (n != 0)
 				printf(", ");
 			printf("'%s': '%s'", tmp->key, tmp->value);
+			n++;
 			tmp = tmp->next;
 			
 		}
