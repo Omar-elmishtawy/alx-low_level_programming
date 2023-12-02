@@ -28,7 +28,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!tmp)
 	{
 		ht->array[key_pos] = node;
-		printf("%s", ht->array[key_pos]->key);
 		return (1);
 	}
 	else
