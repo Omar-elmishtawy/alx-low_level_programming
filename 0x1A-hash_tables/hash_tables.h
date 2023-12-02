@@ -38,4 +38,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 void free_table(hash_table_t *table);
 void free_item(hash_node_t *item);
 hash_node_t *create_item(const char *key, const char *value);
+char *hash_table_get(const hash_table_t *ht, const char *key);
 #endif
