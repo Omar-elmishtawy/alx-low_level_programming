@@ -14,13 +14,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (!key || strlen(key) == 0 || !value || !ht)
 	{
-		free_table(ht);
 		return (0);
 	}
 	node = create_item(key, value);
 	if (!node)
 	{
-		free_table(ht);
 		return (0);
 	}
 	key_pos = key_index((const unsigned char *) key, ht->size);
