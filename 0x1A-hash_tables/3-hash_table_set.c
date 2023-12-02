@@ -11,7 +11,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int key_pos;
 	hash_node_t *node, *current_node, *tmp;
-	
+
 	if (!key || strlen(key) == 0 || !value || !ht)
 	{
 		free_table(ht);
@@ -23,10 +23,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free_table(ht);
 		return (0);
 	}
-
 	key_pos = key_index((const unsigned char *) key, ht->size);
 	current_node = (ht->array)[key_pos];
-	
+
 	if (!current_node)
 	{
 		ht->array[key_pos] = node;
@@ -35,9 +34,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		tmp = current_node;
-		while(tmp)
+		while (tmp)
 		{
-			if(strcmp(tmp->key, key) == 0)
+			if (strcmp(tmp->key, key) == 0)
 			{
 				strcpy(tmp->value, value);
 				free(node);
@@ -70,7 +69,7 @@ hash_node_t *create_item(const char *key, const char *value)
 		return (NULL);
 	node->value = malloc(sizeof(strlen(value)) + 1);
 	if (!(node->value))
-		return NULL;
+		return (NULL);
 	strcpy(node->key, key);
 	strcpy(node->value, value);
 	node->next = NULL;
@@ -84,9 +83,9 @@ hash_node_t *create_item(const char *key, const char *value)
  */
 void free_item(hash_node_t *item)
 {
-    free(item->key);
-    free(item->value);
-    free(item);
+	free(item->key);
+	free(item->value);
+	free(item);
 }
 /**
  * free_table - to free the whole hash table
