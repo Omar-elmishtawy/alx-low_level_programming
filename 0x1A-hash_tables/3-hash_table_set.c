@@ -18,16 +18,17 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	node = create_item(key, value);
+	if (!node)
 	{
 		free_table(ht);
 		return (0);
 	}
 	key_pos = key_index((const unsigned char *) key, ht->size);
 	tmp = (ht->array)[key_pos];
-
 	if (!tmp)
 	{
 		ht->array[key_pos] = node;
+		printf("%s", ht->array[key_pos]->key);
 		return (1);
 	}
 	else
