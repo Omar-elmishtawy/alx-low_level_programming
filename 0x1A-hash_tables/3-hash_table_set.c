@@ -11,8 +11,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int key_pos;
 	hash_node_t *node, *current_node, *tmp;
-
-	if (!key)
+	
+	if (!key || strlen(key) == 0 || !value || !ht)
 	{
 		free_table(ht);
 		return (0);
@@ -24,8 +24,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 
-	key_pos = key_index(key, ht->size);
-	current_node = ht->array[key_index];
+	key_pos = key_index((const unsigned char *) key, ht->size);
+	current_node = (ht->array)[key_pos];
 	
 	if (!current_node)
 	{
