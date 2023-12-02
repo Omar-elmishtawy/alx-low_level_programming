@@ -2,7 +2,7 @@
 
 /**
  * hash_table_print - print
- * @hash_table_t: pointer
+ * @ht: pointer
  */
 
 void hash_table_print(const hash_table_t *ht)
@@ -25,7 +25,6 @@ void hash_table_print(const hash_table_t *ht)
 			printf("'%s': '%s'", tmp->key, tmp->value);
 			n++;
 			tmp = tmp->next;
-			
 		}
 	}
 	printf("}\n");
