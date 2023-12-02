@@ -5,12 +5,12 @@
  * @ht: pointer to the hash table
  * @key: key
  * @value: value
- * @Return: 0 or 1
+ * Return: 0 or 1
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int key_pos;
-	hash_node_t *node, *current_node, *tmp;
+	hash_node_t *node, *tmp;
 
 	if (!key || strlen(key) == 0 || !value || !ht)
 	{
@@ -18,22 +18,20 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	node = create_item(key, value);
-	if (!node)
 	{
 		free_table(ht);
 		return (0);
 	}
 	key_pos = key_index((const unsigned char *) key, ht->size);
-	current_node = (ht->array)[key_pos];
+	tmp = (ht->array)[key_pos];
 
-	if (!current_node)
+	if (!tmp)
 	{
 		ht->array[key_pos] = node;
 		return (1);
 	}
 	else
 	{
-		tmp = current_node;
 		while (tmp)
 		{
 			if (strcmp(tmp->key, key) == 0)
@@ -45,9 +43,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			}
 			tmp = tmp->next;
 		}
-		tmp = current_node;
-		ht->array[key_pos] = node;
+		tmp = ht->array[key_pos];
 		node->next = tmp;
+		ht->array[key_pos] = node;
 	}
 	return (1);
 }
